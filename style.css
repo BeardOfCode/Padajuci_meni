@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #11ad9b;
+}
+
+.kontejner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.kontejner > button:nth-child(1) {
+    padding: 0 24px;
+}
+.kontejner > button:nth-child(2) {
+    width: 60%;
+    background: rgba(0, 0, 0, 0.18);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.meni {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    z-index: 1;
+    width: 100%;
+    translate: -30px 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.45);
+    transition: 0.4s;
+}
+.meni.otvoreno {
+    translate: 0 0;
+    opacity: 1;
+    visibility: visible;
+}
+.meni > button {
+    gap: 10px;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 56px;
+    padding: 0 18px;
+  }
+  
+.meni > button:hover {
+    background: rgba(0, 0, 0, 0.26);
+}
+
+.strelica {
+    margin: auto;
+}

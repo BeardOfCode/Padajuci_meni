@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontejner">
+        <button
+            onclick="klik_na_kontrolnu_tablu()"
+        >
+            Kontrolna Tabla
+        </button>
+        <button
+            onclick="pokreni_meni()"
+        >
+            <span
+                id="strelica"
+                class="strelica material-symbols-outlined"
+            >
+                expand_more   
+            </span>
+        </button>
+        <div id="meni" class="meni">
+            <button
+                onclick="klik_na_meni()"
+            >
+                <span class="material-symbols-outlined">
+                    build
+                </span>
+                Alatke
+            </button>
+            <button
+                onclick="klik_na_meni()"
+            >
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                Podešavanja
+            </button>
+            <button
+                onclick="klik_na_meni()"
+            >
+                <span class="material-symbols-outlined">
+                    lock
+                </span>
+                Korisnički Nalog
+            </button>
+        </div>
+    </div>
+</body>
+</html>
